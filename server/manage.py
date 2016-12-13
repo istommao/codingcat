@@ -1,10 +1,20 @@
-#!/usr/bin/env python
-import os
-import sys
+"""demo."""
+from sanic import Sanic
 
-if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "server.settings")
+from server.urls import API_LIST
 
-    from django.core.management import execute_from_command_line
+from extensions.routers import create_routers
 
-    execute_from_command_line(sys.argv)
+
+def run_app(app_name):
+    """run app."""
+    app = Sanic(app_name)
+
+    create_routers(app, API_LIST)
+
+    app.run(host='127.0.0.1', port=8000)
+
+    return app
+
+if __name__ == '__main__':
+    run_app('codingcat')
