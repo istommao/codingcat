@@ -18,3 +18,12 @@
     hooks:
     -   id: validate_config
     -   id: validate_manifest
+-   repo: local
+    hooks:
+    -   id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        files: \.py$
+        exclude: \/migrations\/
+        args: [--rcfile=.pylintrc]
