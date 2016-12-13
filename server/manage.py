@@ -16,5 +16,6 @@ def run_app(app_name):
 
     return app
 
+
 if __name__ == '__main__':
     run_app('codingcat')
