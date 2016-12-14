@@ -1,6 +1,5 @@
 <template>
-
-  <div class="mainContent">
+  <div>
     <el-upload
       action="//jsonplaceholder.typicode.com/posts/"
       type="drag"

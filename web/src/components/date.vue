@@ -1,6 +1,5 @@
 <template>
-
-  <div class="mainContent">
+  <div>
     <div class="block">
       <span class="demonstration">默认</span>
       <el-date-picker

@@ -1,5 +1,5 @@
 <template>
-<div class="mainContent">
+<div>
 <el-row>
   <el-col :span="8" v-for="(o, index) in 2" :offset="index > 0 ? 2 : 0">
     <el-card :body-style="{ padding: '0px' }">

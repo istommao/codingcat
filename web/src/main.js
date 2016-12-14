@@ -27,6 +27,7 @@ import dateComponent from './components/date.vue'
 import uploadComponent from './components/upload.vue'
 import formComponent from './components/form.vue'
 import cardComponent from './components/card.vue'
+import noticeComponent from './components/notice.vue'
 
 let routers = [
   {
@@ -68,6 +69,10 @@ let routers = [
   {
     path: '/card',
     component: cardComponent
+  },
+  {
+    path: '/notice',
+    component: noticeComponent
   }
 ]
 

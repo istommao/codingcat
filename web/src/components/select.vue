@@ -1,5 +1,5 @@
 <template>
-  <div class="mainContent">
+  <div>
     <el-select v-model="value8" filterable placeholder="请选择">
       <el-option
         v-for="item in options"

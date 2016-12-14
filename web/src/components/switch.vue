@@ -1,5 +1,5 @@
 <template>
-  <div class="mainContent">
+  <div>
     <el-switch
       v-model="value1"
       on-text="开启"
