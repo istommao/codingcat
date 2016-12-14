@@ -19,14 +19,15 @@ class HomePageView(BaseView):
         return html(html_content)
 
 
-class SiteList(BaseView):
+class SiteListView(BaseView):
 
     def get(self, request):
         site_list = [
-            {'url': 'https://www.zhihu.com/'}
+            {"url": "https://www.zhihu.com/"},
+            {"url": "https://www.v2ex.com/"}
         ]
         dataset = {
-            'results': site_list
+            "results": site_list
         }
 
-        return json(**dataset)
+        return json(dataset)
