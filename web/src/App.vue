@@ -5,6 +5,7 @@
               <div class="siteName">CodingCat</div>
               <div class="menu">
                 <ul>
+                  <li><router-link to="/">首页</router-link></li>
                   <li><router-link to="/icon">Icon 图标</router-link></li>
                   <li><router-link to="/button">Button 按钮</router-link></li>
                   <li><router-link to="/radio">Radio 单选框</router-link></li>
@@ -20,7 +21,7 @@
               </div>
           </div>
           <div class="main">
-              <div class="topBar">Messages</div>
+              <div class="topBar"></div>
               <div class="mainContent">
                 <router-view class="view"></router-view>
               </div>

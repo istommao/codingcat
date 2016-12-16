@@ -28,8 +28,13 @@ import uploadComponent from './components/upload.vue'
 import formComponent from './components/form.vue'
 import cardComponent from './components/card.vue'
 import noticeComponent from './components/notice.vue'
+import HomepageComponent from './components/homepage.vue'
 
 let routers = [
+  {
+    path: '/',
+    component: HomepageComponent
+  },
   {
     path: '/icon',
     component: iconComponent

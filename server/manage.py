@@ -1,4 +1,5 @@
 """demo."""
+import os
 from sanic import Sanic
 from sanic.response import text
 
@@ -10,6 +11,11 @@ from extensions.routers import create_routers
 def run_app(app_name):
     """run app."""
     app = Sanic(app_name)
+
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    dist_path = '{}/web/dist/'.format(BASE_DIR)
+    app.static('/dist', dist_path)
 
     create_routers(app, API_LIST)
 

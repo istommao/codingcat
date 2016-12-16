@@ -1,6 +1,6 @@
 from server import apis
 
 API_LIST = [
-    {'view': apis.HomePageView, 'url': '/'},
-    {'view': apis.SiteListView, 'url': '/sites/'}
+    {'view': apis.HomePageView, 'url': r'/<url:.*>'},
+    {'view': apis.SiteListView, 'url': r'/api/sites/'}
 ]
