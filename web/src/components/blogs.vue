@@ -1,13 +1,5 @@
 <template>
   <div>
-    <el-row>
-      <el-col :span="24"><div class="grid-content bg-purple-dark">
-        <img style="width:100%;height:250px;" src="/dist/assets/images/banner.png">
-      </div>
-      </el-col>
-
-    </el-row>
-
     <div class="siteList">
       <div class="siteItem" v-for="site in sites">
 
@@ -30,7 +22,7 @@
       }
     },
     mounted: function() {
-      this.$http.get('http://127.0.0.1:8005/api/sites/home/', {}, {
+      this.$http.get('http://127.0.0.1:8005/api/sites/blogs/', {}, {
           headers: {},
           emulateJSON: true
       }).then(function(response) {

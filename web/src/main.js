@@ -29,11 +29,21 @@ import formComponent from './components/form.vue'
 import cardComponent from './components/card.vue'
 import noticeComponent from './components/notice.vue'
 import HomepageComponent from './components/homepage.vue'
+import BlogsComponent from './components/blogs.vue'
+import InfosComponent from './components/infos.vue'
 
 let routers = [
   {
     path: '/',
     component: HomepageComponent
+  },
+  {
+    path: '/infos',
+    component: InfosComponent
+  },
+  {
+    path: '/blogs',
+    component: BlogsComponent
   },
   {
     path: '/icon',
