@@ -2,20 +2,24 @@
       {
             "title": "酷壳",
             "url": "http://coolshell.cn/",
+            "tags": ["博客"],
             "image": "http://127.0.0.1:8005/dist/assets/images/site.jpeg"
       },
       {
             "title": "廖雪峰",
+            "tags": ["博客"],
             "url": "http://www.liaoxuefeng.com/",
             "image": "http://127.0.0.1:8005/dist/assets/images/site.jpeg"
       },
       {
             "title": "阮一峰",
+            "tags": ["博客"],
             "url": "http://www.ruanyifeng.com/blog/",
             "image": "http://127.0.0.1:8005/dist/assets/images/site.jpeg"
       },
       {
             "title": "xlzd",
+            "tags": ["博客"],
             "url": "http://xlzd.me/",
             "image": "http://127.0.0.1:8005/dist/assets/images/site.jpeg"
       }

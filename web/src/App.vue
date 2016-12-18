@@ -5,9 +5,9 @@
               <div class="siteName">CodingCat</div>
               <div class="menu">
                 <ul>
-                  <li><router-link to="/">首页</router-link></li>
-                  <li><router-link to="/blogs">个人博客</router-link></li>
-                  <li><router-link to="/infos">资讯站点</router-link></li>
+                  <li><router-link to="/" exact><i class="fa fa-home" aria-hidden="true"></i>  首页</router-link></li>
+                  <li><router-link to="/blogs"><i class="fa fa-book" aria-hidden="true"></i>  个人博客</router-link></li>
+                  <li><router-link to="/infos"><i class="fa fa-bars" aria-hidden="true"></i>  资讯站点</router-link></li>
 
                   <!-- <li><router-link to="/icon">Icon 图标</router-link></li>
                   <li><router-link to="/button">Button 按钮</router-link></li>

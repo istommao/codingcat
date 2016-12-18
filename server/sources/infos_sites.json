@@ -2,26 +2,49 @@
       {
             "title": "虎嗅网",
             "url": "http://www.huxiu.com/",
+            "tags": ["资讯"],
             "image": "https://statics.huxiu.com/w/mini/static_2015/img/logo.jpg?imageView2/1/w/63/h/50/|imageMogr2/strip/interlace/1/quality/85/format/jpg"
       },
       {
             "title": "华尔街日报",
             "url": "http://cn.wsj.com/",
+            "tags": ["资讯"],
             "image": "http://127.0.0.1:8005/dist/assets/images/site.jpeg"
       },
       {
             "title": "ifanr 爱范儿",
+            "tags": ["资讯"],
             "url": "http://www.ifanr.com/",
             "image": "http://ifanr-cdn.b0.upaiyun.com/wp-content/themes/ifanr-4.0/static/images/ifanr/logo.png"
       },
       {
             "title": "玩儿法",
+            "tags": ["资讯"],
             "url": "http://www.waerfa.com/",
             "image": "http://127.0.0.1:8005/dist/assets/images/site.jpeg"
       },
       {
             "title": "少数派",
+            "tags": ["资讯"],
             "url": "http://sspai.com/",
             "image": "http://upload.jianshu.io/collections/images/25756/sspai_logo_512x512.png?imageMogr/thumbnail/300x300"
+      },
+      {
+            "title": "72变",
+            "tags": ["资讯"],
+            "url": "http://www.72byte.com/",
+            "image": "http://static1.72byte.com/images/logo.png"
+      },
+      {
+            "title": "Xclient",
+            "tags": ["资讯"],
+            "url": "http://xclient.info/",
+            "image": "http://img.xclient.info/img/logo.png"
+      },
+      {
+            "title": "黑客派",
+            "tags": ["资讯", "技术"],
+            "url": "https://hacpai.com/",
+            "image": "http://127.0.0.1:8005/dist/assets/images/site.jpeg"
       }
 ]
