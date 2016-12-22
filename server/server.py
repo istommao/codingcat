@@ -1,16 +1,17 @@
 """demo."""
 import os
+
 from sanic import Sanic
-from sanic.response import text
 
 from server.urls import API_LIST
 
 from extensions.routers import create_routers
+from extensions.reloadhandler import run_app
 
 
-def run_app(app_name):
+def create_app():
     """run app."""
-    app = Sanic(app_name)
+    app = Sanic()
 
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -26,12 +27,16 @@ def run_app(app_name):
         response.headers['Access-Control-Allow-Origin'] = '*'
         response.headers['Access-Control-Allow-Headers'] = ALLOW_HEADERS
         response.headers['Access-Control-Allow-Methods'] = ALLOW_METHODS
-        return response
 
-    app.run(host='127.0.0.1', port=8005, debug=True)
+        return response
 
     return app
 
 
+def main():
+    app = create_app()
+    run_app(app, host='127.0.0.1', port=8005)
+
+
 if __name__ == '__main__':
-    run_app('codingcat')
+    exit(main())

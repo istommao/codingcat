@@ -95,3 +95,5 @@ ENV/
 
 # Dependency directories
 node_modules
+
+tags
