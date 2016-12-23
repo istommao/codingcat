@@ -6,7 +6,6 @@ from sanic import Sanic
 from server.urls import API_LIST
 
 from extensions.routers import create_routers
-from extensions.reloadhandler import run_app
 
 
 def create_app():
@@ -35,7 +34,7 @@ def create_app():
 
 def main():
     app = create_app()
-    run_app(app, host='127.0.0.1', port=8005)
+    app.run(host='127.0.0.1', port=8005, workers=2, debug=False)
 
 
 if __name__ == '__main__':

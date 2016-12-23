@@ -3,7 +3,7 @@
     <div class="siteList">
       <div class="siteItem" v-for="site in sites">
 
-        <router-link :to="{ path: '/detail/' + (site.uid || 'unknown') }">
+        <router-link :to="{ path: '/blogs/' + (site.uid || 'unknown') }">
           <div class="imgDiv"><img :src="site.image" :alt="site.title"></div>
           <div class="siteTitle">
             {{ site.title }}
