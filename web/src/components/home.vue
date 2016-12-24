@@ -34,7 +34,7 @@
       }
     },
     mounted: function() {
-      this.$http.get('http://127.0.0.1:8005/api/sites/home/', {}, {
+      this.$http.get('http://115.29.189.159/api/sites/home/', {}, {
           headers: {},
           emulateJSON: true
       }).then(function(response) {

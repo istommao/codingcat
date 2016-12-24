@@ -28,7 +28,7 @@
       }
     },
     mounted: function() {
-      this.$http.get('http://127.0.0.1:8005/api/sites/infos/', {}, {
+      this.$http.get('http://115.29.189.159/api/sites/infos/', {}, {
           headers: {},
           emulateJSON: true
       }).then(function(response) {
