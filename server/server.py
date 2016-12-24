@@ -7,6 +7,8 @@ from server.urls import API_LIST
 
 from extensions.routers import create_routers
 
+from server.settings import APP_CONFIG
+
 
 def create_app():
     """run app."""
@@ -34,7 +36,7 @@ def create_app():
 
 def main():
     app = create_app()
-    app.run(host='127.0.0.1', port=8005, workers=2, debug=False)
+    app.run(**APP_CONFIG)
 
 
 if __name__ == '__main__':
