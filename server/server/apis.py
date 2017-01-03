@@ -1,6 +1,11 @@
 # coding: utf-8
 import os
 import json
+import ujson
+
+import asyncio
+
+import aiofiles
 
 from sanic import response
 
@@ -44,18 +49,18 @@ class HomePageView(BaseView):
 def get_sites(path):
     value = KVSTORE.get(path)
     if value:
-        dataset = json.loads(value.decode())
+        dataset = ujson.loads(value.decode())
     else:
         site_list = []
         if os.path.exists(path):
             with open(path, 'r') as handler:
-                site_list = json.load(handler)
+                site_list = ujson.load(handler)
 
         dataset = {
             'results': site_list
         }
 
-        KVSTORE.set(path, json.dumps(dataset))
+        KVSTORE.set(path, ujson.dumps(dataset))
 
     return dataset
 
@@ -68,7 +73,6 @@ class SiteListView(BaseView):
         path = '{}/sources/{}_sites.json'.format(BASE_DIR, name)
 
         dataset = get_sites(path)
-
         return response.json(dataset)
 
 

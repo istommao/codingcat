@@ -160,5 +160,12 @@
         "tags": ["博客"],
         "url": "http://wulfric.me/",
         "image": "http://127.0.0.1:8005/dist/assets/images/site.jpg"
+    },
+    {
+        "uid": "234zxdv345",
+        "title": "selfboot",
+        "tags": ["博客"],
+        "url": "http://selfboot.cn/",
+        "image": "http://127.0.0.1:8005/dist/assets/images/site.jpg"
     }
 ]

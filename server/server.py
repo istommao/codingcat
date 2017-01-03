@@ -21,6 +21,12 @@ def create_app():
 
     create_routers(app, API_LIST)
 
+    return app
+
+
+def main():
+    app = create_app()
+
     @app.middleware('response')
     async def halt_response(request, response):
         ALLOW_METHODS = 'HEAD, POST, GET, PUT, DELETE, OPTIONS'
@@ -31,11 +37,6 @@ def create_app():
 
         return response
 
-    return app
-
-
-def main():
-    app = create_app()
     app.run(**APP_CONFIG)
 
 

@@ -1,6 +1,8 @@
 
+DEBUG = False
+
 APP_CONFIG = dict(
-    host='127.0.0.1', port=8005, workers=2, debug=False
+    host='127.0.0.1', port=8005, workers=2, debug=DEBUG
 )
 
 try:
